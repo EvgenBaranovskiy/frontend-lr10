@@ -56,7 +56,7 @@ let currentStep = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
     player.name = prompt("Введіть ім'я: ");
-    if (!isValidName(player.name)) {
+    if (player.name == null || !isValidName(player.name)) {
         alert("Розмір ім'я повинен бути від 1 до 18 символів!");
         window.location.reload();
     }
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    //Оброка завершення генерації ячейок
+    //Обробка завершення генерації ячейок
     document.addEventListener('cellsGenerated', () => {
         enableButton();
         if (isWin()) {
