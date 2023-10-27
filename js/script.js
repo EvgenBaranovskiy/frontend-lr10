@@ -1,4 +1,3 @@
-
 const stickers =
 {
     0: {
