@@ -72,6 +72,7 @@ main {
 #player-name {
     background: rgb(195,34,189);
     background: linear-gradient(0deg, rgba(195,34,189,1) 0%, rgba(253,45,175,1) 100%);
+	color: white;
     width: 25%;
     height: 80%;
     border-radius: 25px;
